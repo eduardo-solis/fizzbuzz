@@ -34,4 +34,18 @@ describe('Unit Test for FizzbuzzService class', () => {
 
     })
 
+    test('Test 3.- Apply validation in explorer \nThird case: atribute trick = BUZZ', () => {
+
+        // Obtenermos los datos en formato JSON
+        const explorers = Reader.readJSONFile('explorers.json')
+
+        // Obteniendo una lista filtrada por mision
+        const explorersByMission = ExplorerService.filterByMission(explorers, 'node')
+
+        const explorerWithValidation = FizzbuzzService.applyValidationInExplorer(explorersByMission[4])
+
+        expect(explorerWithValidation.trick).toBe('BUZZ')
+
+    })
+
 })
