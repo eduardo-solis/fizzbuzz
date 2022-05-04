@@ -47,5 +47,18 @@ describe('Unit Test for ExplorerService class', () => {
 
     })
 
+    test('Test 4.- Add validation to get the quantity of explorers by Mission', () => {
+
+        // Obtenermos los datos en formato JSON
+        const explorers = Reader.readJSONFile('explorers.json')
+        //console.log(explorers)
+
+        // Obteniendo la cantidad de explores
+        const quantityOfExplorers = ExplorerService.getAmountOfExplorersByMission(explorers, 'nodes')
+
+        expect(quantityOfExplorers.error).toMatch(/no existen explorers con esta mision/)
+
+    })
+
 })
 
