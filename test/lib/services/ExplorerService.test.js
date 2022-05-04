@@ -79,7 +79,7 @@ describe('Unit Test for ExplorerService class', () => {
         const explorers = Reader.readJSONFile('explorers.json')
 
         // Obtenemos la lista de los nombres de usuario
-        const usernamesByMission = ExplorerService.getExplorersUsernamesByMission(explorers, 'node')
+        const usernamesByMission = ExplorerService.getExplorersUsernamesByMission(explorers, 'nodes')
 
         // Comparamos
         expect(usernamesByMission.error).toMatch(/no existen explorers con esta mision/)
