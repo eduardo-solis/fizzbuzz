@@ -15,7 +15,9 @@ describe('Unit Test for ExplorerService class', () => {
 
         // Obteniendo una lista filtrada por mision
         const explorersByMission = ExplorerService.filterByMission(explorers, 'node')
-        console.log(explorersByMission)
+        //console.log(explorersByMission)
+
+        expect(explorersByMission).not.toHaveLength(0)
 
     })
 
