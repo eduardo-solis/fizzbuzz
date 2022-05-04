@@ -60,5 +60,18 @@ describe('Unit Test for ExplorerService class', () => {
 
     })
 
+    test("Test 5.- Get the explorer's usernames by Mission", () => {
+
+        // Obtenermos los datos en formato JSON
+        const explorers = Reader.readJSONFile('explorers.json')
+
+        // Obtenemos la lista de los nombres de usuario
+        const usernamesByMission = ExplorerService.getExplorersUsernamesByMission(explorers, 'node')
+
+        // Comparamos
+        expect(usernamesByMission).not.toHaveLength(0)
+
+    })
+
 })
 
