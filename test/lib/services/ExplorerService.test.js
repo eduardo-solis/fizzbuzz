@@ -21,5 +21,18 @@ describe('Unit Test for ExplorerService class', () => {
 
     })
 
+    test('Test 2.- Add validation to filter the information by Mission', () => {
+
+        // Obtenermos los datos en formato JSON
+        const explorers = Reader.readJSONFile('explorers.json')
+        //console.log(explorers)
+
+        // Obteniendo una lista filtrada por mision
+        const explorersByMission = ExplorerService.filterByMission(explorers, 'nodes')
+
+        expect(explorersByMission.error).toMatch(/no existen explorers con esta mision/)
+
+    })
+
 })
 
