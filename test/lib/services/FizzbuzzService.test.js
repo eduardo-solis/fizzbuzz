@@ -36,7 +36,7 @@ describe('Unit Test for FizzbuzzService class', () => {
 
     test('Test 4.- Apply validation in explorer \nFourth case: atribute trick = FIZZBUZZ', () => {
 
-        // Obtenermos los datos en formato JSON
+        // Obtenermos los datos en formato JSON 
         const explorers = Reader.readJSONFile('explorers.json')
 
         // Obteniendo una lista filtrada por mision
