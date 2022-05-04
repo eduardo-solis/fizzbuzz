@@ -42,7 +42,7 @@ describe('Unit Test for FizzbuzzService class', () => {
         // Obteniendo una lista filtrada por mision
         const explorersByMission = ExplorerService.filterByMission(explorers, 'node')
 
-        const explorerWithValidation = FizzbuzzService.applyValidationInExplorer(explorersByMission[9])
+        const explorerWithValidation = FizzbuzzService.applyValidationInExplorer(explorersByMission[8])
 
         expect(explorerWithValidation.trick).toBe('FIZZBUZZ')
 
