@@ -43,7 +43,7 @@ describe('Unit Test for ExplorerService class', () => {
         const quantityOfExplorers = ExplorerService.getAmountOfExplorersByMission(explorers, 'node')
 
         // Comparamos
-        expect(quantityOfExplorers).not.toBe(0)
+        expect(typeof (quantityOfExplorers)).toBe( typeof (0) )
 
     })
 
