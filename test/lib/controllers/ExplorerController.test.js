@@ -47,28 +47,28 @@ describe("Unit Test for ExplorerController class", () => {
 
     });
 
-    test('Test 7.- Apply validation in number\n First case: return number', () => {
+    test("Test 7.- Apply validation in number\n First case: return number", () => {
         
         const result =  ExplorerController.applyValidationInNumber(1);
         expect(result).toBe(1);
 
     });
 
-    test('Test 8.- Apply validation in number\n Second case: return "FIZZ"', () => {
+    test("Test 8.- Apply validation in number\n Second case: return \"FIZZ\"", () => {
         
         const result =  ExplorerController.applyValidationInNumber(3);
         expect(result).toBe("FIZZ");
 
     });
 
-    test('Test 9.- Apply validation in number\n Third case: return "BUZZ"', () => {
+    test("Test 9.- Apply validation in number\n Third case: return \"BUZZ\"", () => {
         
         const result =  ExplorerController.applyValidationInNumber(5);
         expect(result).toBe("BUZZ");
 
     });
 
-    test('Test 10.- Apply validation in number\n Fourth case: return "FIZZBUZZ"', () => {
+    test("Test 10.- Apply validation in number\n Fourth case: return \"FIZZBUZZ\"", () => {
         
         const result =  ExplorerController.applyValidationInNumber(15);
         expect(result).toBe("FIZZBUZZ");
