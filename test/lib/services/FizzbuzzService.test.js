@@ -55,21 +55,21 @@ describe("Unit Test for FizzbuzzService class", () => {
 
     });
 
-    test('Test 6.- Apply validation in number\n First case: return "FIZZ"', () => {
+    test('Test 6.- Apply validation in number\n Second case: return "FIZZ"', () => {
         
         const result =  FizzbuzzService.applyValidationInNumber(3);
         expect(result).toBe("FIZZ");
 
     });
 
-    test('Test 7.- Apply validation in number\n First case: return "BUZZ"', () => {
+    test('Test 7.- Apply validation in number\n Third case: return "BUZZ"', () => {
         
         const result =  FizzbuzzService.applyValidationInNumber(5);
         expect(result).toBe("BUZZ");
 
     });
 
-    test('Test 8.- Apply validation in number\n First case: return "FIZZBUZZ"', () => {
+    test('Test 8.- Apply validation in number\n Fourth case: return "FIZZBUZZ"', () => {
         
         const result =  FizzbuzzService.applyValidationInNumber(15);
         expect(result).toBe("FIZZBUZZ");
