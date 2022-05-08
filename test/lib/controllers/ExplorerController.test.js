@@ -75,5 +75,12 @@ describe("Unit Test for ExplorerController class", () => {
 
     });
 
+    test("Test 11.- Get explorer's usernames by mission in one string", () => {
+
+        const usernames = ExplorerController.getExplorersUsernamesByMissionInString("node");
+        expect(typeof(usernames)).tobe("String");
+        
+    });
+
 });
 
