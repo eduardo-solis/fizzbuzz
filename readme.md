@@ -1,6 +1,6 @@
 # Proyecto FizzBuzz
 
-> Practica de LaunchX.
+> Practica de LaunchX
 
 En este proyecto se llevo a cabo lo siguiente:
 
